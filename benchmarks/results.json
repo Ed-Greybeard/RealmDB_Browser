@@ -1,0 +1,27 @@
+{
+  "description": "Local synthetic benchmark, 100000 rows; median of 5 runs (3 for search, sparse recovery and SQLite export). Repeated operations and exports use an already opened database. Timings vary with hardware and filesystem.",
+  "before_ms": {
+    "cold_tables": 182.438,
+    "repeated_tables": 176.716,
+    "cold_nodes": 168.372,
+    "repeated_nodes": 163.999,
+    "repeated_sorted_order": 43.117,
+    "ten_sorted_position_lookups": 443.7,
+    "search_no_matches": 478.061,
+    "recovery_without_free_space": 367.781,
+    "recovery_8mib_empty_free_space": 361.167,
+    "sqlite_export": 316.074
+  },
+  "after_ms": {
+    "cold_tables": 119.842,
+    "repeated_tables": 0.001,
+    "cold_nodes": 104.488,
+    "repeated_nodes": 0.001,
+    "repeated_sorted_order": 0.001,
+    "ten_sorted_position_lookups": 0.013,
+    "search_no_matches": 313.471,
+    "recovery_without_free_space": 0.004,
+    "recovery_8mib_empty_free_space": 3.702,
+    "sqlite_export": 125.962
+  }
+}
